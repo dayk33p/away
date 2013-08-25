@@ -4,7 +4,7 @@
 //
 //  Created by Sam Clark on 8/25/13.
 //  Copyright (c) 2013 dayk33p. All rights reserved.
-//
+// This should be fucking sweet
 
 #import "AwayAppDelegate.h"
 
