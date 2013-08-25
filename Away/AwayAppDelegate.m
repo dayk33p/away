@@ -7,12 +7,16 @@
 // This should be fucking sweet
 
 #import "AwayAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AwayAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"1c3vLekObIhoSKge11lntrrDiBclaLXr5x6PpBMY"
+                  clientKey:@"K4NuK38QOIV3n8bwILPeiWx8Z7pvVsQ0VcAO5fyT"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 							
