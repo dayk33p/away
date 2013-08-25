@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		222C17E717CABDBB00AEAEB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C17E617CABDBB00AEAEB7 /* Foundation.framework */; };
+		222C17E917CABDBB00AEAEB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C17E817CABDBB00AEAEB7 /* CoreGraphics.framework */; };
+		222C17EB17CABDBB00AEAEB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C17EA17CABDBB00AEAEB7 /* UIKit.framework */; };
+		222C17F117CABDBB00AEAEB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222C17EF17CABDBB00AEAEB7 /* InfoPlist.strings */; };
+		222C17F317CABDBB00AEAEB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C17F217CABDBB00AEAEB7 /* main.m */; };
+		222C17F717CABDBB00AEAEB7 /* AwayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C17F617CABDBB00AEAEB7 /* AwayAppDelegate.m */; };
+		222C17FA17CABDBB00AEAEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222C17F817CABDBB00AEAEB7 /* Main.storyboard */; };
+		222C17FD17CABDBC00AEAEB7 /* AwayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C17FC17CABDBC00AEAEB7 /* AwayViewController.m */; };
+		222C17FF17CABDBC00AEAEB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222C17FE17CABDBC00AEAEB7 /* Images.xcassets */; };
+		222C180617CABDBC00AEAEB7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C180517CABDBC00AEAEB7 /* XCTest.framework */; };
+		222C180717CABDBC00AEAEB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C17E617CABDBB00AEAEB7 /* Foundation.framework */; };
+		222C180817CABDBC00AEAEB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C17EA17CABDBB00AEAEB7 /* UIKit.framework */; };
+		222C181017CABDBC00AEAEB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222C180E17CABDBC00AEAEB7 /* InfoPlist.strings */; };
+		222C181217CABDBC00AEAEB7 /* AwayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C181117CABDBC00AEAEB7 /* AwayTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		222C180917CABDBC00AEAEB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 222C17DB17CABDBB00AEAEB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 222C17E217CABDBB00AEAEB7;
+			remoteInfo = Away;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		222C17E317CABDBB00AEAEB7 /* Away.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Away.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		222C17E617CABDBB00AEAEB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		222C17E817CABDBB00AEAEB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		222C17EA17CABDBB00AEAEB7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		222C17EE17CABDBB00AEAEB7 /* Away-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Away-Info.plist"; sourceTree = "<group>"; };
+		222C17F017CABDBB00AEAEB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		222C17F217CABDBB00AEAEB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		222C17F417CABDBB00AEAEB7 /* Away-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Away-Prefix.pch"; sourceTree = "<group>"; };
+		222C17F517CABDBB00AEAEB7 /* AwayAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwayAppDelegate.h; sourceTree = "<group>"; };
+		222C17F617CABDBB00AEAEB7 /* AwayAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwayAppDelegate.m; sourceTree = "<group>"; };
+		222C17F917CABDBB00AEAEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		222C17FB17CABDBB00AEAEB7 /* AwayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwayViewController.h; sourceTree = "<group>"; };
+		222C17FC17CABDBC00AEAEB7 /* AwayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwayViewController.m; sourceTree = "<group>"; };
+		222C17FE17CABDBC00AEAEB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		222C180417CABDBC00AEAEB7 /* AwayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		222C180517CABDBC00AEAEB7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		222C180D17CABDBC00AEAEB7 /* AwayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwayTests-Info.plist"; sourceTree = "<group>"; };
+		222C180F17CABDBC00AEAEB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		222C181117CABDBC00AEAEB7 /* AwayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwayTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		222C17E017CABDBB00AEAEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C17E917CABDBB00AEAEB7 /* CoreGraphics.framework in Frameworks */,
+				222C17EB17CABDBB00AEAEB7 /* UIKit.framework in Frameworks */,
+				222C17E717CABDBB00AEAEB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222C180117CABDBC00AEAEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C180617CABDBC00AEAEB7 /* XCTest.framework in Frameworks */,
+				222C180817CABDBC00AEAEB7 /* UIKit.framework in Frameworks */,
+				222C180717CABDBC00AEAEB7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		222C17DA17CABDBB00AEAEB7 = {
+			isa = PBXGroup;
+			children = (
+				222C17EC17CABDBB00AEAEB7 /* Away */,
+				222C180B17CABDBC00AEAEB7 /* AwayTests */,
+				222C17E517CABDBB00AEAEB7 /* Frameworks */,
+				222C17E417CABDBB00AEAEB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		222C17E417CABDBB00AEAEB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				222C17E317CABDBB00AEAEB7 /* Away.app */,
+				222C180417CABDBC00AEAEB7 /* AwayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		222C17E517CABDBB00AEAEB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222C17E617CABDBB00AEAEB7 /* Foundation.framework */,
+				222C17E817CABDBB00AEAEB7 /* CoreGraphics.framework */,
+				222C17EA17CABDBB00AEAEB7 /* UIKit.framework */,
+				222C180517CABDBC00AEAEB7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		222C17EC17CABDBB00AEAEB7 /* Away */ = {
+			isa = PBXGroup;
+			children = (
+				222C17F517CABDBB00AEAEB7 /* AwayAppDelegate.h */,
+				222C17F617CABDBB00AEAEB7 /* AwayAppDelegate.m */,
+				222C17F817CABDBB00AEAEB7 /* Main.storyboard */,
+				222C17FB17CABDBB00AEAEB7 /* AwayViewController.h */,
+				222C17FC17CABDBC00AEAEB7 /* AwayViewController.m */,
+				222C17FE17CABDBC00AEAEB7 /* Images.xcassets */,
+				222C17ED17CABDBB00AEAEB7 /* Supporting Files */,
+			);
+			path = Away;
+			sourceTree = "<group>";
+		};
+		222C17ED17CABDBB00AEAEB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222C17EE17CABDBB00AEAEB7 /* Away-Info.plist */,
+				222C17EF17CABDBB00AEAEB7 /* InfoPlist.strings */,
+				222C17F217CABDBB00AEAEB7 /* main.m */,
+				222C17F417CABDBB00AEAEB7 /* Away-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		222C180B17CABDBC00AEAEB7 /* AwayTests */ = {
+			isa = PBXGroup;
+			children = (
+				222C181117CABDBC00AEAEB7 /* AwayTests.m */,
+				222C180C17CABDBC00AEAEB7 /* Supporting Files */,
+			);
+			path = AwayTests;
+			sourceTree = "<group>";
+		};
+		222C180C17CABDBC00AEAEB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				222C180D17CABDBC00AEAEB7 /* AwayTests-Info.plist */,
+				222C180E17CABDBC00AEAEB7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		222C17E217CABDBB00AEAEB7 /* Away */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222C181517CABDBC00AEAEB7 /* Build configuration list for PBXNativeTarget "Away" */;
+			buildPhases = (
+				222C17DF17CABDBB00AEAEB7 /* Sources */,
+				222C17E017CABDBB00AEAEB7 /* Frameworks */,
+				222C17E117CABDBB00AEAEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Away;
+			productName = Away;
+			productReference = 222C17E317CABDBB00AEAEB7 /* Away.app */;
+			productType = "com.apple.product-type.application";
+		};
+		222C180317CABDBC00AEAEB7 /* AwayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 222C181817CABDBC00AEAEB7 /* Build configuration list for PBXNativeTarget "AwayTests" */;
+			buildPhases = (
+				222C180017CABDBC00AEAEB7 /* Sources */,
+				222C180117CABDBC00AEAEB7 /* Frameworks */,
+				222C180217CABDBC00AEAEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				222C180A17CABDBC00AEAEB7 /* PBXTargetDependency */,
+			);
+			name = AwayTests;
+			productName = AwayTests;
+			productReference = 222C180417CABDBC00AEAEB7 /* AwayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		222C17DB17CABDBB00AEAEB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Away;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = dayk33p;
+				TargetAttributes = {
+					222C180317CABDBC00AEAEB7 = {
+						TestTargetID = 222C17E217CABDBB00AEAEB7;
+					};
+				};
+			};
+			buildConfigurationList = 222C17DE17CABDBB00AEAEB7 /* Build configuration list for PBXProject "Away" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 222C17DA17CABDBB00AEAEB7;
+			productRefGroup = 222C17E417CABDBB00AEAEB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				222C17E217CABDBB00AEAEB7 /* Away */,
+				222C180317CABDBC00AEAEB7 /* AwayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		222C17E117CABDBB00AEAEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C17FF17CABDBC00AEAEB7 /* Images.xcassets in Resources */,
+				222C17F117CABDBB00AEAEB7 /* InfoPlist.strings in Resources */,
+				222C17FA17CABDBB00AEAEB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222C180217CABDBC00AEAEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C181017CABDBC00AEAEB7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		222C17DF17CABDBB00AEAEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C17F717CABDBB00AEAEB7 /* AwayAppDelegate.m in Sources */,
+				222C17FD17CABDBC00AEAEB7 /* AwayViewController.m in Sources */,
+				222C17F317CABDBB00AEAEB7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222C180017CABDBC00AEAEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222C181217CABDBC00AEAEB7 /* AwayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		222C180A17CABDBC00AEAEB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 222C17E217CABDBB00AEAEB7 /* Away */;
+			targetProxy = 222C180917CABDBC00AEAEB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		222C17EF17CABDBB00AEAEB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222C17F017CABDBB00AEAEB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		222C17F817CABDBB00AEAEB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222C17F917CABDBB00AEAEB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		222C180E17CABDBC00AEAEB7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				222C180F17CABDBC00AEAEB7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		222C181317CABDBC00AEAEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		222C181417CABDBC00AEAEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		222C181617CABDBC00AEAEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Away/Away-Prefix.pch";
+				INFOPLIST_FILE = "Away/Away-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		222C181717CABDBC00AEAEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Away/Away-Prefix.pch";
+				INFOPLIST_FILE = "Away/Away-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		222C181917CABDBC00AEAEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Away.app/Away";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Away/Away-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AwayTests/AwayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		222C181A17CABDBC00AEAEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Away.app/Away";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Away/Away-Prefix.pch";
+				INFOPLIST_FILE = "AwayTests/AwayTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		222C17DE17CABDBB00AEAEB7 /* Build configuration list for PBXProject "Away" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222C181317CABDBC00AEAEB7 /* Debug */,
+				222C181417CABDBC00AEAEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		222C181517CABDBC00AEAEB7 /* Build configuration list for PBXNativeTarget "Away" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222C181617CABDBC00AEAEB7 /* Debug */,
+				222C181717CABDBC00AEAEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		222C181817CABDBC00AEAEB7 /* Build configuration list for PBXNativeTarget "AwayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				222C181917CABDBC00AEAEB7 /* Debug */,
+				222C181A17CABDBC00AEAEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 222C17DB17CABDBB00AEAEB7 /* Project object */;
+}
