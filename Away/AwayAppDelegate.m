@@ -8,15 +8,20 @@
 
 #import "AwayAppDelegate.h"
 #import <Parse/Parse.h>
+#import "AwayViewController.h"
 
 @implementation AwayAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [Parse setApplicationId:@"1c3vLekObIhoSKge11lntrrDiBclaLXr5x6PpBMY"
                   clientKey:@"K4NuK38QOIV3n8bwILPeiWx8Z7pvVsQ0VcAO5fyT"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[AwayViewController alloc] init]];
+  
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
