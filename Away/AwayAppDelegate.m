@@ -9,8 +9,23 @@
 #import "AwayAppDelegate.h"
 #import <Parse/Parse.h>
 #import "AwayViewController.h"
+#import "HomeViewController.h"
+#import "TestViewController.h"
+@interface AwayAppDelegate ()
+@property (nonatomic, strong) HomeViewController *homeViewController;
+@property (nonatomic, strong) AwayViewController *awayViewController;
+@property (nonatomic, strong) TestViewController *testViewController;
+@end
+    
 
 @implementation AwayAppDelegate
+
+@synthesize window;
+@synthesize homeViewController;
+@synthesize awayViewController;
+@synthesize tabBarController;
+@synthesize navController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -19,9 +34,13 @@
     [Parse setApplicationId:@"1c3vLekObIhoSKge11lntrrDiBclaLXr5x6PpBMY"
                   clientKey:@"K4NuK38QOIV3n8bwILPeiWx8Z7pvVsQ0VcAO5fyT"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[AwayViewController alloc] init]];
+    self.awayViewController = [[AwayViewController alloc] init];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.awayViewController];
+    self.navController.navigationBarHidden = YES;
+    self.window.rootViewController = self.navController;
   
     [self.window makeKeyAndVisible];
+    NSLog(@"LOADED ROOT");
     return YES;
 }
 							
@@ -50,6 +69,25 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#
+- (void)presentTabBarController {
+    self.tabBarController = [[TabBarController alloc] init];
+    self.homeViewController = [[HomeViewController alloc] init];
+    self.testViewController = [[TestViewController alloc] init];
+    UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:self.homeViewController];
+    UINavigationController *testNavigationController = [[UINavigationController alloc] initWithRootViewController:self.testViewController];
+    UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
+
+    UITabBarItem *testTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Testt" image:nil tag:0];
+    [homeNavigationController setTabBarItem:homeTabBarItem];
+    [testNavigationController setTabBarItem:testTabBarItem];
+    self.tabBarController.delegate = self;
+    self.tabBarController.viewControllers = @[homeNavigationController,testNavigationController];
+    [self.navController setViewControllers:@[ self.awayViewController, self.tabBarController ] animated:NO];
+    
+    NSLog(@"pesenting tab bar controller");
 }
 
 @end

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TabBarController.h"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
-
-@interface AwayAppDelegate : UIResponder <UIApplicationDelegate>
-
+@interface AwayAppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
+- (void)presentTabBarController;
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) TabBarController *tabBarController;
+@property (strong, nonatomic) UINavigationController *navController;
 @end

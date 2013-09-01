@@ -7,7 +7,7 @@
 //
 
 #import "AwayViewController.h"
-
+#import "AwayAppDelegate.h"
 @interface AwayViewController ()
 
 @end
@@ -35,6 +35,12 @@
         
         // Present the log in view controller
         [self presentViewController:logInViewController animated:YES completion:NULL];
+    }
+    else {
+        //tabview code
+        NSLog(@"PFUSE CURRENT USER TRUE");
+        [(AwayAppDelegate*)[[UIApplication sharedApplication] delegate] presentTabBarController];
+        
     }
 
 	// Do any additional setup after loading the view, typically from a nib.
