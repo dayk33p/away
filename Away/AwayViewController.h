@@ -10,5 +10,6 @@
 #import <Parse/Parse.h>
 
 @interface AwayViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+- (void) showLoginView;
 
 @end

@@ -30,9 +30,10 @@
 		2271EF3617CAC4E300B62232 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2271EF3517CAC4E300B62232 /* Security.framework */; };
 		2271EF3817CAC4F300B62232 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2271EF3717CAC4F300B62232 /* StoreKit.framework */; };
 		2271EF3A17CAC4FC00B62232 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2271EF3917CAC4FC00B62232 /* SystemConfiguration.framework */; };
+		227447D517D3EB35007ECF54 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227447D317D3EB35007ECF54 /* TestViewController.m */; };
+		227447D617D3EB35007ECF54 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227447D417D3EB35007ECF54 /* TestViewController.xib */; };
 		228143A117D3DC3400E5EE29 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228143A017D3DC3400E5EE29 /* TabBarController.m */; };
 		228143A417D3E07000E5EE29 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228143A317D3E07000E5EE29 /* HomeViewController.m */; };
-		228143A717D3E39D00E5EE29 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228143A617D3E39D00E5EE29 /* TestViewController.m */; };
 		22C3E8B317CAC6DE005B5A78 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C3E8B217CAC6DE005B5A78 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,12 +76,13 @@
 		2271EF3517CAC4E300B62232 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2271EF3717CAC4F300B62232 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2271EF3917CAC4FC00B62232 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		227447D217D3EB35007ECF54 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = ../TestViewController.h; sourceTree = "<group>"; };
+		227447D317D3EB35007ECF54 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = ../TestViewController.m; sourceTree = "<group>"; };
+		227447D417D3EB35007ECF54 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestViewController.xib; path = ../TestViewController.xib; sourceTree = "<group>"; };
 		2281439F17D3DC3400E5EE29 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = ../TabBarController.h; sourceTree = "<group>"; };
 		228143A017D3DC3400E5EE29 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = ../TabBarController.m; sourceTree = "<group>"; };
 		228143A217D3E07000E5EE29 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		228143A317D3E07000E5EE29 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		228143A517D3E39D00E5EE29 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		228143A617D3E39D00E5EE29 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		22C3E8B217CAC6DE005B5A78 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,12 +163,13 @@
 		222C17EC17CABDBB00AEAEB7 /* Away */ = {
 			isa = PBXGroup;
 			children = (
+				227447D217D3EB35007ECF54 /* TestViewController.h */,
+				227447D317D3EB35007ECF54 /* TestViewController.m */,
+				227447D417D3EB35007ECF54 /* TestViewController.xib */,
 				2281439F17D3DC3400E5EE29 /* TabBarController.h */,
 				228143A017D3DC3400E5EE29 /* TabBarController.m */,
 				222C17F517CABDBB00AEAEB7 /* AwayAppDelegate.h */,
 				222C17F617CABDBB00AEAEB7 /* AwayAppDelegate.m */,
-				228143A517D3E39D00E5EE29 /* TestViewController.h */,
-				228143A617D3E39D00E5EE29 /* TestViewController.m */,
 				228143A217D3E07000E5EE29 /* HomeViewController.h */,
 				228143A317D3E07000E5EE29 /* HomeViewController.m */,
 				222C17F817CABDBB00AEAEB7 /* Main.storyboard */,
@@ -286,6 +289,7 @@
 			files = (
 				222C17FF17CABDBC00AEAEB7 /* Images.xcassets in Resources */,
 				222C17F117CABDBB00AEAEB7 /* InfoPlist.strings in Resources */,
+				227447D617D3EB35007ECF54 /* TestViewController.xib in Resources */,
 				222C17FA17CABDBB00AEAEB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228143A717D3E39D00E5EE29 /* TestViewController.m in Sources */,
+				227447D517D3EB35007ECF54 /* TestViewController.m in Sources */,
 				222C17F717CABDBB00AEAEB7 /* AwayAppDelegate.m in Sources */,
 				228143A117D3DC3400E5EE29 /* TabBarController.m in Sources */,
 				222C17FD17CABDBC00AEAEB7 /* AwayViewController.m in Sources */,

@@ -23,18 +23,8 @@
     [testObject save];*/
     if (![PFUser currentUser]) { // No user logged in
         // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        // Assign our sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-        
-        // Present the log in view controller
-        [self presentViewController:logInViewController animated:YES completion:NULL];
+        [self showLoginView];
+       
     }
     else {
         //tabview code
@@ -44,6 +34,40 @@
     }
 
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    /*PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+     [testObject setObject:@"bar" forKey:@"foo"];
+     [testObject save];*/
+    [super viewWillAppear:animated];
+    if (![PFUser currentUser]) { // No user logged in
+        // Create the log in view controller
+        [self showLoginView];
+        
+    }
+    else {
+        //tabview code
+        NSLog(@"PFUSE CURRENT USER TRUE");
+        [(AwayAppDelegate*)[[UIApplication sharedApplication] delegate] presentTabBarController];
+        
+    }
+    
+}
+
+-(void) showLoginView {
+    PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
+    [logInViewController setDelegate:self]; // Set ourselves as the delegate
+    
+    // Create the sign up view controller
+    PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+    [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+    
+    // Assign our sign up controller to be displayed from the login controller
+    [logInViewController setSignUpController:signUpViewController];
+    
+    // Present the log in view controller
+    [self presentViewController:logInViewController animated:YES completion:NULL];
 }
 
 - (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password {

@@ -12,6 +12,7 @@
 
 @interface AwayAppDelegate : UIResponder <UIApplicationDelegate,UITabBarControllerDelegate>
 - (void)presentTabBarController;
+- (void)logOut;
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) TabBarController *tabBarController;
 @property (strong, nonatomic) UINavigationController *navController;

@@ -73,21 +73,47 @@
 
 #
 - (void)presentTabBarController {
+    /* 
+     * Initializes views, navigation controllers,tabbar items
+     * Called in AwayViewController viewDidLoad()
+     */
+    
+    // create view controllers
     self.tabBarController = [[TabBarController alloc] init];
     self.homeViewController = [[HomeViewController alloc] init];
     self.testViewController = [[TestViewController alloc] init];
+    
+    // create navigation controllers
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:self.homeViewController];
     UINavigationController *testNavigationController = [[UINavigationController alloc] initWithRootViewController:self.testViewController];
+    
+    // create tabbar items
     UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
-
     UITabBarItem *testTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Testt" image:nil tag:0];
     [homeNavigationController setTabBarItem:homeTabBarItem];
     [testNavigationController setTabBarItem:testTabBarItem];
+    
+    // tie up logic
     self.tabBarController.delegate = self;
     self.tabBarController.viewControllers = @[homeNavigationController,testNavigationController];
     [self.navController setViewControllers:@[ self.awayViewController, self.tabBarController ] animated:NO];
+}
+
+- (void) logOut{
+    /*
+     * Logs the user out of parse. Handles resulting navigation logic
+     * In future garbage collection tasks might be added to this
+     */
+    [PFUser logOut];
+    [self.navController popToRootViewControllerAnimated:YES];
+    NSLog(@"%@",self.navController);
     
-    NSLog(@"pesenting tab bar controller");
+    
+    
+ 
+    
+//   self.homeViewController = nil;
+//self.testViewController = nil;
 }
 
 @end

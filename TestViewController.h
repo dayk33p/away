@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <Parse/Parse.h>
 @interface TestViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UIButton *logOutButton;
+-(IBAction) logUserOut;
 @end
