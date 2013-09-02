@@ -11,10 +11,12 @@
 #import "AwayViewController.h"
 #import "HomeViewController.h"
 #import "TestViewController.h"
+#import  "AwayTableViewController.h"
 @interface AwayAppDelegate ()
 @property (nonatomic, strong) HomeViewController *homeViewController;
 @property (nonatomic, strong) AwayViewController *awayViewController;
 @property (nonatomic, strong) TestViewController *testViewController;
+@property (nonatomic, strong) AwayTableViewController *awayTableViewController;
 @end
     
 
@@ -35,12 +37,22 @@
                   clientKey:@"K4NuK38QOIV3n8bwILPeiWx8Z7pvVsQ0VcAO5fyT"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     self.awayViewController = [[AwayViewController alloc] init];
+    
+    
+    // buggy
+    UIBarButtonItem *logOutButton = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStyleDone target:self action:@selector(logOut)];
+     self.awayViewController.navigationItem.rightBarButtonItem = logOutButton; // it's not supports
+    // end shit is still buggy
+    
+  
     self.navController = [[UINavigationController alloc] initWithRootViewController:self.awayViewController];
     self.navController.navigationBarHidden = YES;
+    
     self.window.rootViewController = self.navController;
+    
   
     [self.window makeKeyAndVisible];
-    NSLog(@"LOADED ROOT");
+
     return YES;
 }
 							
@@ -79,24 +91,32 @@
      */
     
     // create view controllers
+
     self.tabBarController = [[TabBarController alloc] init];
     self.homeViewController = [[HomeViewController alloc] init];
     self.testViewController = [[TestViewController alloc] init];
+    self.awayTableViewController = [[AwayTableViewController alloc] initWithStyle:UITableViewStylePlain];
     
     // create navigation controllers
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:self.homeViewController];
     UINavigationController *testNavigationController = [[UINavigationController alloc] initWithRootViewController:self.testViewController];
+    UINavigationController *awayTableViewNavigationController = [[UINavigationController alloc] initWithRootViewController:self.awayTableViewController];
+    
     
     // create tabbar items
+
+    
     UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
     UITabBarItem *testTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Testt" image:nil tag:0];
+    UITabBarItem *awayTableViewTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Aways" image:nil tag:0];
     [homeNavigationController setTabBarItem:homeTabBarItem];
     [testNavigationController setTabBarItem:testTabBarItem];
+    [awayTableViewNavigationController setTabBarItem:awayTableViewTabBarItem];
     
     // tie up logic
     self.tabBarController.delegate = self;
-    self.tabBarController.viewControllers = @[homeNavigationController,testNavigationController];
-    [self.navController setViewControllers:@[ self.awayViewController, self.tabBarController ] animated:NO];
+    self.tabBarController.viewControllers = @[homeNavigationController,testNavigationController,awayTableViewNavigationController];
+    [self.navController setViewControllers:@[ self.awayViewController, self.tabBarController] animated:NO];
 }
 
 - (void) logOut{
@@ -106,14 +126,9 @@
      */
     [PFUser logOut];
     [self.navController popToRootViewControllerAnimated:YES];
-    NSLog(@"%@",self.navController);
-    
-    
-    
- 
-    
-//   self.homeViewController = nil;
-//self.testViewController = nil;
+    // clean up views
+    self.homeViewController = nil;
+    self.testViewController = nil;
 }
 
 @end

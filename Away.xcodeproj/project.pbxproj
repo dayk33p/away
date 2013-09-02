@@ -21,6 +21,8 @@
 		222C180817CABDBC00AEAEB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C17EA17CABDBB00AEAEB7 /* UIKit.framework */; };
 		222C181017CABDBC00AEAEB7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222C180E17CABDBC00AEAEB7 /* InfoPlist.strings */; };
 		222C181217CABDBC00AEAEB7 /* AwayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 222C181117CABDBC00AEAEB7 /* AwayTests.m */; };
+		22590F6A17D4FF9700712F39 /* AwayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22590F6917D4FF9700712F39 /* AwayTableViewController.m */; };
+		22590F6D17D502B600712F39 /* NewAwayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22590F6C17D502B600712F39 /* NewAwayViewController.m */; };
 		2271EF2A17CAC47900B62232 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2271EF2917CAC47900B62232 /* AudioToolbox.framework */; };
 		2271EF2C17CAC48600B62232 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2271EF2B17CAC48600B62232 /* CFNetwork.framework */; };
 		2271EF2E17CAC49900B62232 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2271EF2D17CAC49900B62232 /* CoreLocation.framework */; };
@@ -32,6 +34,7 @@
 		2271EF3A17CAC4FC00B62232 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2271EF3917CAC4FC00B62232 /* SystemConfiguration.framework */; };
 		227447D517D3EB35007ECF54 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227447D317D3EB35007ECF54 /* TestViewController.m */; };
 		227447D617D3EB35007ECF54 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 227447D417D3EB35007ECF54 /* TestViewController.xib */; };
+		227447D817D3FA23007ECF54 /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 227447D717D3FA23007ECF54 /* friends.png */; };
 		228143A117D3DC3400E5EE29 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228143A017D3DC3400E5EE29 /* TabBarController.m */; };
 		228143A417D3E07000E5EE29 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228143A317D3E07000E5EE29 /* HomeViewController.m */; };
 		22C3E8B317CAC6DE005B5A78 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C3E8B217CAC6DE005B5A78 /* Parse.framework */; };
@@ -67,6 +70,10 @@
 		222C180D17CABDBC00AEAEB7 /* AwayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AwayTests-Info.plist"; sourceTree = "<group>"; };
 		222C180F17CABDBC00AEAEB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		222C181117CABDBC00AEAEB7 /* AwayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwayTests.m; sourceTree = "<group>"; };
+		22590F6817D4FF9700712F39 /* AwayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwayTableViewController.h; sourceTree = "<group>"; };
+		22590F6917D4FF9700712F39 /* AwayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwayTableViewController.m; sourceTree = "<group>"; };
+		22590F6B17D502B600712F39 /* NewAwayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAwayViewController.h; sourceTree = "<group>"; };
+		22590F6C17D502B600712F39 /* NewAwayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAwayViewController.m; sourceTree = "<group>"; };
 		2271EF2917CAC47900B62232 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2271EF2B17CAC48600B62232 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2271EF2D17CAC49900B62232 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -79,6 +86,7 @@
 		227447D217D3EB35007ECF54 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = ../TestViewController.h; sourceTree = "<group>"; };
 		227447D317D3EB35007ECF54 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = ../TestViewController.m; sourceTree = "<group>"; };
 		227447D417D3EB35007ECF54 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestViewController.xib; path = ../TestViewController.xib; sourceTree = "<group>"; };
+		227447D717D3FA23007ECF54 /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
 		2281439F17D3DC3400E5EE29 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = ../TabBarController.h; sourceTree = "<group>"; };
 		228143A017D3DC3400E5EE29 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = ../TabBarController.m; sourceTree = "<group>"; };
 		228143A217D3E07000E5EE29 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -170,7 +178,12 @@
 				228143A017D3DC3400E5EE29 /* TabBarController.m */,
 				222C17F517CABDBB00AEAEB7 /* AwayAppDelegate.h */,
 				222C17F617CABDBB00AEAEB7 /* AwayAppDelegate.m */,
+				22590F6817D4FF9700712F39 /* AwayTableViewController.h */,
+				22590F6917D4FF9700712F39 /* AwayTableViewController.m */,
+				22590F6B17D502B600712F39 /* NewAwayViewController.h */,
+				22590F6C17D502B600712F39 /* NewAwayViewController.m */,
 				228143A217D3E07000E5EE29 /* HomeViewController.h */,
+				227447D717D3FA23007ECF54 /* friends.png */,
 				228143A317D3E07000E5EE29 /* HomeViewController.m */,
 				222C17F817CABDBB00AEAEB7 /* Main.storyboard */,
 				222C17FB17CABDBB00AEAEB7 /* AwayViewController.h */,
@@ -289,6 +302,7 @@
 			files = (
 				222C17FF17CABDBC00AEAEB7 /* Images.xcassets in Resources */,
 				222C17F117CABDBB00AEAEB7 /* InfoPlist.strings in Resources */,
+				227447D817D3FA23007ECF54 /* friends.png in Resources */,
 				227447D617D3EB35007ECF54 /* TestViewController.xib in Resources */,
 				222C17FA17CABDBB00AEAEB7 /* Main.storyboard in Resources */,
 			);
@@ -310,9 +324,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				227447D517D3EB35007ECF54 /* TestViewController.m in Sources */,
+				22590F6A17D4FF9700712F39 /* AwayTableViewController.m in Sources */,
 				222C17F717CABDBB00AEAEB7 /* AwayAppDelegate.m in Sources */,
 				228143A117D3DC3400E5EE29 /* TabBarController.m in Sources */,
 				222C17FD17CABDBC00AEAEB7 /* AwayViewController.m in Sources */,
+				22590F6D17D502B600712F39 /* NewAwayViewController.m in Sources */,
 				228143A417D3E07000E5EE29 /* HomeViewController.m in Sources */,
 				222C17F317CABDBB00AEAEB7 /* main.m in Sources */,
 			);

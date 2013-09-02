@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     NSLog(@"%@",([PFUser currentUser]));
+    
     // Do any additional setup after loading the view from its nib.
 }
 

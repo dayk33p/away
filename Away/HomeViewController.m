@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"Welcome home !");
+
 	// Do any additional setup after loading the view.
 }
 

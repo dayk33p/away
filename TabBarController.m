@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     self.navController = [[UINavigationController alloc] init];
+    
 	// Do any additional setup after loading the view.
     // [[self tabBar] setBackgroundImage:[UIImage imageNamed:@"BackgroundTabBar.png"]];
     // [[self tabBar] setSelectionIndicatorImage:[UIImage imageNamed:@"BackgroundTabBarItemSelected.png"]];

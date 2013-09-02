@@ -21,38 +21,33 @@
     /*PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
     [testObject setObject:@"bar" forKey:@"foo"];
     [testObject save];*/
-    if (![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        [self showLoginView];
-       
-    }
-    else {
-        //tabview code
-        NSLog(@"PFUSE CURRENT USER TRUE");
-        [(AwayAppDelegate*)[[UIApplication sharedApplication] delegate] presentTabBarController];
-        
-    }
+    
 
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void) loginLogic {
+    // determines which view shows dependin on whether or not a user is currently logged in
+    
+    if (![PFUser currentUser]) {
+        // No user logged in --> loginViewController logic
+
+        [self showLoginView];
+        
+    }
+    else {
+        //we have a user code --> present tab view
+        [(AwayAppDelegate*)[[UIApplication sharedApplication] delegate] presentTabBarController];
+        
+    }
+    
+}
 - (void) viewWillAppear:(BOOL)animated {
     /*PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
      [testObject setObject:@"bar" forKey:@"foo"];
      [testObject save];*/
     [super viewWillAppear:animated];
-    if (![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        [self showLoginView];
-        
-    }
-    else {
-        //tabview code
-        NSLog(@"PFUSE CURRENT USER TRUE");
-        [(AwayAppDelegate*)[[UIApplication sharedApplication] delegate] presentTabBarController];
-        
-    }
-    
+    [self loginLogic];
 }
 
 -(void) showLoginView {
@@ -70,6 +65,7 @@
     [self presentViewController:logInViewController animated:YES completion:NULL];
 }
 
+// delegat methods for login work
 - (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password {
     // Check if both fields are completed
     if (username && password && username.length != 0 && password.length != 0) {

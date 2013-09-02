@@ -11,5 +11,6 @@
 
 @interface AwayViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 - (void) showLoginView;
+- (void) loginLogic;
 
 @end
